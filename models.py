@@ -7,7 +7,6 @@ from torch.autograd import Variable
 
 import numpy as np
 
-
 from torch.nn import Parameter
 
 BN = nn.BatchNorm2d
