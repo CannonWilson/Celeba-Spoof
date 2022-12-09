@@ -54,7 +54,7 @@ def run_test(detector_class, image_iter):
         time_before = time.time()
         try:
             prob = detector.predict(image)
-
+            
             for idx,i in enumerate(image_id):
                 output_probs[i] = float(prob[idx][1])
         except:
@@ -75,7 +75,8 @@ def run_test(detector_class, image_iter):
     """)
 
     # verify the algorithm output
-    verify_output(output_probs)
+    # verify_output(output_probs)
+    print('Output_probs at end of run: ', output_probs)
 
 
 if __name__ == '__main__':

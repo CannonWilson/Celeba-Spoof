@@ -95,7 +95,7 @@ def get_image(max_number=None):
 
         if n == Batch_size or idx == len(image_list) - 1:
             np_final_image_id = np.array(final_image_id)
-            np_final_image = np.array(final_image)
+            np_final_image = np.array(final_image, dtype=object)
             n = 0
             final_image = []
             final_image_id = []
