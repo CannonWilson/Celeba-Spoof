@@ -28,7 +28,7 @@ def read_image(image_path):
     """
 
     image_path = LOCAL_ROOT + image_path
-
+    print('Reading image at path: ', image_path)
     img = cv2.imread(image_path)
     # Get the shape of input image
     real_h,real_w,c = img.shape
